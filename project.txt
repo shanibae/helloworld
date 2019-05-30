@@ -1,0 +1,22 @@
+<!-- LoginPage.blade.php -->
+<!DOCTYPE html>
+<html>
+<head>
+	<title>login</title>
+	<link rel="stylesheet" type="text/css" href="css/ProjectCSS.css">
+	<style type="text/css"></style>
+</head>
+<body>
+<form method="post" action="{{URL::to('login_action')}}">
+<input type="hidden" name="_token" value="{{csrf_token()}}">
+<!-- <div id="box"> -->
+	<div id="d" >
+
+		<h2>UserName:<input type="text" name="UserName" id="d1"><br>
+		Password:<input type="Password" name="Password" id="d2"><br></h2>
+		<input type="submit" name="sub" value="Login" id="d3">
+	</div>
+<!-- </div>	 -->
+</form>
+</body>
+</html>
